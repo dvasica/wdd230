@@ -1,14 +1,45 @@
-@media only screen and (min-width:38rem) {
+@media (min-width: 500px) {
+	nav ul {
+        display: flex;   
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
 
-.card {
+
+
+
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid;
+	font-size: smaller;
+	text-align: center;
+}
+
+
+main{
     display: grid;
-    grid-template-columns: 10 fr 1 fr;
-    column-gap: 10px;
+    grid-template-columns: 30% 70%;
+
 }
 
-.card section {
-    box-shadow: 1 px 1px 10px black;
+.learning{
+    grid-column: 1/2;
+    background-color: aquamarine;
+    text-align: center;
+    
 }
 
+.information {
+    grid-column: 2/3;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.wdd_title{
+	grid-column: 1/3;
+    padding: 2rem;
+}
 
 }
